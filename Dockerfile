@@ -20,7 +20,7 @@ RUN chmod +x /usr/local/bin/helm
 # RUN apk add --no-cache cmake make git ca-certificates git bash curl jq
 
 
-RUN helm plugin install https://github.com/databus23/helm-diff && \
+RUN helm plugin install https://github.com/databus23/helm-diff --version 3.1.3 && \
     helm plugin install https://github.com/futuresimple/helm-secrets && \
     helm plugin install https://github.com/hypnoglow/helm-s3.git && \
     helm plugin install https://github.com/aslafy-z/helm-git.git 
